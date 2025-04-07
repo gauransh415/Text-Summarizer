@@ -65,7 +65,7 @@ def main():
                     st.error("Please make sure you have installed the correct versions of the required packages.")
                     st.code("pip install streamlit==1.32.0 torch==2.2.0 transformers==4.38.2")
         else:
-            st.warning("Please enter some text to summarize")
+            st.warning("Please enter text to create a summary.")
 
     # Example text section
     with st.expander("Example Text"):
@@ -75,7 +75,7 @@ When I search for something on Kagi, the correct result is in the first 2 links 
 
 The consistently great results page is further boosted by the search personalization I control. I've told Kagi that any results from Stack Overflow or Medium should be weighted higher, and blocked other sites I don't care to see results from. No ads. Objectively better search results. Of all the subscriptions I pay for, this is the hill I will die on."""
         
-        if st.button("Use Example Text"):
+        if st.button("Use Some Example Text"):
             # Use a different key to avoid conflict with the other button
             st.session_state["example_text"] = example_text
             st.experimental_rerun()

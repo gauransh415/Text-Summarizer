@@ -17,8 +17,7 @@ def main():
     st.write("Enter your text below to get a summarized version using BART large CNN model")
     
     # Create a text area for input
-    text_input = st.text_area("Input Text", height=300, 
-                             placeholder="Paste your text here...")
+    text_input = st.text_area("Input Text", height=300, placeholder="Paste your text here")
     
     # Sliders for controlling summarization parameters
     col1, col2 = st.columns(2)
